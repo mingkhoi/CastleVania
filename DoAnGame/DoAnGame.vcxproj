@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{C9F8446B-9BDA-442B-95B2-FA59D86CCDCA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DoAnGame</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>CastleVania</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;dxerr.lib;dinput8.lib;winmm.lib;dsound.lib;Xaudio2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3dx9.lib;d3d9.lib;dxguid.lib;dxerr.lib;dinput8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;dxerr.lib;dinput8.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3dx9.lib;d3d9.lib;dxguid.lib;dxerr.lib;dinput8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="animation.h" />
+    <ClInclude Include="animationSet.h" />
+    <ClInclude Include="autoGoStair.h" />
+    <ClInclude Include="axe.h" />
+    <ClInclude Include="bigHeart.h" />
+    <ClInclude Include="blackKnight.h" />
+    <ClInclude Include="bone.h" />
+    <ClInclude Include="boomerang.h" />
+    <ClInclude Include="boss.h" />
+    <ClInclude Include="bossBall.h" />
+    <ClInclude Include="BossBullet.h" />
+    <ClInclude Include="bossDieEffect.h" />
+    <ClInclude Include="bow.h" />
+    <ClInclude Include="brokenBrick.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="candle.h" />
+    <ClInclude Include="chicken.h" />
+    <ClInclude Include="cross.h" />
+    <ClInclude Include="crown.h" />
+    <ClInclude Include="database.h" />
+    <ClInclude Include="define.h" />
+    <ClInclude Include="CastleVania.h" />
+    <ClInclude Include="doubleShot.h" />
+    <ClInclude Include="effectDie.h" />
+    <ClInclude Include="effectHit.h" />
+    <ClInclude Include="emptyBrick.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="gameObject.h" />
+    <ClInclude Include="gameObjectEx.h" />
+    <ClInclude Include="ghost.h" />
+    <ClInclude Include="hidden.h" />
+    <ClInclude Include="holyWater.h" />
+    <ClInclude Include="hunchBack.h" />
+    <ClInclude Include="introBat.h" />
+    <ClInclude Include="introShip.h" />
+    <ClInclude Include="invisible.h" />
+    <ClInclude Include="knife.h" />
+    <ClInclude Include="listGameobject.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="moneyLv1.h" />
+    <ClInclude Include="moneyLv2.h" />
+    <ClInclude Include="moneyLv3.h" />
+    <ClInclude Include="moneyMax.h" />
+    <ClInclude Include="movePaddle.h" />
+    <ClInclude Include="point.h" />
+    <ClInclude Include="portal.h" />
+    <ClInclude Include="rapidxml.hpp" />
+    <ClInclude Include="rapidxml_iterators.hpp" />
+    <ClInclude Include="rapidxml_print.hpp" />
+    <ClInclude Include="rapidxml_utils.hpp" />
+    <ClInclude Include="raven.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="gamePlay.h" />
+    <ClInclude Include="score.h" />
+    <ClInclude Include="selector.h" />
+    <ClInclude Include="simon.h" />
+    <ClInclude Include="skeleton.h" />
+    <ClInclude Include="smallHeart.h" />
+    <ClInclude Include="enemySpawner.h" />
+    <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="sprite.h" />
+    <ClInclude Include="startBat.h" />
+    <ClInclude Include="startScript.h" />
+    <ClInclude Include="subWeaponSpawner.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="tile.h" />
+    <ClInclude Include="timeMachine.h" />
+    <ClInclude Include="torch.h" />
+    <ClInclude Include="treasure.h" />
+    <ClInclude Include="tripleShot.h" />
+    <ClInclude Include="userData.h" />
+    <ClInclude Include="vampireBat.h" />
+    <ClInclude Include="whip.h" />
+    <ClInclude Include="zombie.h" />
+    <ClInclude Include="zombieSpawner.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="animation.cpp" />
+    <ClCompile Include="animationSet.cpp" />
+    <ClCompile Include="autoGoStair.cpp" />
+    <ClCompile Include="axe.cpp" />
+    <ClCompile Include="bigHeart.cpp" />
+    <ClCompile Include="blackKnight.cpp" />
+    <ClCompile Include="bone.cpp" />
+    <ClCompile Include="boomerang.cpp" />
+    <ClCompile Include="boss.cpp" />
+    <ClCompile Include="bossBall.cpp" />
+    <ClCompile Include="BossBullet.cpp" />
+    <ClCompile Include="bossDieEffect.cpp" />
+    <ClCompile Include="bow.cpp" />
+    <ClCompile Include="brokenBrick.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="candle.cpp" />
+    <ClCompile Include="chicken.cpp" />
+    <ClCompile Include="cross.cpp" />
+    <ClCompile Include="crown.cpp" />
+    <ClCompile Include="database.cpp" />
+    <ClCompile Include="doubleShot.cpp" />
+    <ClCompile Include="effectDie.cpp" />
+    <ClCompile Include="effectHit.cpp" />
+    <ClCompile Include="emptyBrick.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="gameObject.cpp" />
+    <ClCompile Include="gameObjectEx.cpp" />
+    <ClCompile Include="ghost.cpp" />
+    <ClCompile Include="hidden.cpp" />
+    <ClCompile Include="holyWater.cpp" />
+    <ClCompile Include="hunchBack.cpp" />
+    <ClCompile Include="introBat.cpp" />
+    <ClCompile Include="introShip.cpp" />
+    <ClCompile Include="invisible.cpp" />
+    <ClCompile Include="knife.cpp" />
+    <ClCompile Include="listGameobject.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="map.cpp" />
+    <ClCompile Include="moneyLv1.cpp" />
+    <ClCompile Include="moneyLv2.cpp" />
+    <ClCompile Include="moneyLv3.cpp" />
+    <ClCompile Include="moneyMax.cpp" />
+    <ClCompile Include="movePaddle.cpp" />
+    <ClCompile Include="point.cpp" />
+    <ClCompile Include="portal.cpp" />
+    <ClCompile Include="gamePlay.cpp" />
+    <ClCompile Include="raven.cpp" />
+    <ClCompile Include="score.cpp" />
+    <ClCompile Include="selector.cpp" />
+    <ClCompile Include="simon.cpp" />
+    <ClCompile Include="skeleton.cpp" />
+    <ClCompile Include="smallHeart.cpp" />
+    <ClCompile Include="enemySpawner.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="sprite.cpp" />
+    <ClCompile Include="startBat.cpp" />
+    <ClCompile Include="startScript.cpp" />
+    <ClCompile Include="subWeaponSpawner.cpp" />
+    <ClCompile Include="texture.cpp" />
+    <ClCompile Include="tile.cpp" />
+    <ClCompile Include="timeMachine.cpp" />
+    <ClCompile Include="torch.cpp" />
+    <ClCompile Include="treasure.cpp" />
+    <ClCompile Include="tripleShot.cpp" />
+    <ClCompile Include="userData.cpp" />
+    <ClCompile Include="vampireBat.cpp" />
+    <ClCompile Include="whip.cpp" />
+    <ClCompile Include="zombie.cpp" />
+    <ClCompile Include="zombieSpawner.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DoAnGame.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="DoAnGame.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="data.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Microsoft.XAudio2.Redist.1.2.2\build\native\Microsoft.XAudio2.Redist.targets" Condition="Exists('..\packages\Microsoft.XAudio2.Redist.1.2.2\build\native\Microsoft.XAudio2.Redist.targets')" />
+    <Import Project="..\packages\directxtk_desktop_win10.2020.7.2.1\build\native\directxtk_desktop_win10.targets" Condition="Exists('..\packages\directxtk_desktop_win10.2020.7.2.1\build\native\directxtk_desktop_win10.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.XAudio2.Redist.1.2.2\build\native\Microsoft.XAudio2.Redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.XAudio2.Redist.1.2.2\build\native\Microsoft.XAudio2.Redist.targets'))" />
+    <Error Condition="!Exists('..\packages\directxtk_desktop_win10.2020.7.2.1\build\native\directxtk_desktop_win10.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\directxtk_desktop_win10.2020.7.2.1\build\native\directxtk_desktop_win10.targets'))" />
+  </Target>
+</Project>
