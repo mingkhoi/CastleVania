@@ -15,6 +15,8 @@ Nhảy: Space
 
 Di chuyển qua lại: ← →
 
+Quỳ: ↓
+
 Lên xuống cầu thang: ↑ ↓
 
 ---
